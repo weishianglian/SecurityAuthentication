@@ -23,5 +23,5 @@ Is when a block cioher is used to encrypt blocks od data one at the time without
 
 **Explain how to use a hash algorithm tocreate a one-time pad encryption algorithm.**
 
-
+It is not possible to build a perfect one-time pad using a hashm as the hash is not a perfect "random" string generator. However given a document we use the first page, to create a hash. This hash becomes the key used in the one-time pad. For each block of plaintext we hash a different page of the document to create a new key. The encryption is a simple XOR function.
 
